@@ -5,6 +5,20 @@ public abstract class entite
 	private int posx;
 	private int posy; 
 	private boolean estoccupe; 
+	
+	public int getidE()
+	{
+		return this.idE;
+	}
+	public int getposx()
+	{
+		return this.posx;
+	}
+	public int getposy()
+	{
+		return this.posy;
+	}
+	
 	/**
 	 * @param args
 	 */
