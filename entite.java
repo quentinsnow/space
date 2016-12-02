@@ -1,11 +1,19 @@
-
-public abstract class entite 
+import java.util.Random;
+public  class entite 
 {
 	private int idE ;
 	private int posx;
 	private int posy; 
 	private boolean estoccupe; 
 	
+	public entite ()
+	{
+		Random rand = new Random();
+		this.idE = Math.abs(rand.nextInt())%10;
+		this.posx =Math.abs(rand.nextInt())%Constantes.Largeur;
+		this.posy = Math.abs(rand.nextInt())%Constantes.Hauteur; 
+		this.estoccupe = false;
+	}
 	public int getidE()
 	{
 		return this.idE;
@@ -18,7 +26,10 @@ public abstract class entite
 	{
 		return this.posy;
 	}
-	
+	public boolean getestoccupe ()
+	{
+		return this.estoccupe; 
+	}
 	/**
 	 * @param args
 	 */
