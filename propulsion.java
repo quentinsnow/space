@@ -1,9 +1,25 @@
+import java.util.Random;
+
 
 public class propulsion 
 {
-	private int portee; 
-	private int reservoir;
-
+	private int Portee; 
+	private int Reservoir;
+	
+	public int getPortee()
+	{
+		return this.Portee;
+	}
+	public int getReservoir()
+	{
+		return this.Reservoir;
+	}
+	public propulsion()
+	{
+		Random rand = new Random();
+		this.Portee = Math.abs(rand.nextInt())%(Constantes.PropulsionPorteeMax-Constantes.PropulsionPorteeMin) + Constantes.PropulsionPorteeMin ;
+		this.Reservoir = Math.abs(rand.nextInt())%20 +10;
+	}
 	/**
 	 * @param args
 	 */
