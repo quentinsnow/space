@@ -11,8 +11,8 @@ public  class Entite
 	{
 		Random rand = new Random();
 		this.IdE = ;//trouver une methode pour avoir des id différents pour toute les entites
-		this.Posx =Math.abs(rand.nextInt())%Constantes.Largeur;
-		this.Posy = Math.abs(rand.nextInt())%Constantes.Hauteur; 
+		this.Posx =;
+		this.Posy = ; 
 		this.EstOccupe = false;
 	}
 	public int getIdE()
