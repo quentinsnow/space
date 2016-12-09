@@ -12,7 +12,7 @@ public class Propulsion
 	private int Portee; 
 	private int Reservoir;
 	private int LimiteReserv;
-	
+	//Retourne une liste des positions que peut atteindre le vaisseau 
 	public int getPortee()
 	{
 		return this.Portee;
