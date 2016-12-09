@@ -4,10 +4,14 @@ import java.util.Random;
 
 public class Planete extends Entite
 {
+	/**
+	 * @param Taille La taille représente le maximum de population et aussi la taille de sa représentation graphique
+	 * @param Popu La piopulation de la planete
+	 * @param Constr Un booléen qui retourne vrai si la planete construit un vaisseau 
+	 */
 	private int Taille; 
 	private int Popu;
 	private boolean Constr;
-	
 	public Planete ()
 	{
 		super();
@@ -35,8 +39,10 @@ public class Planete extends Entite
 	}
 	public void construction() //TODO a implementer
 	{
+		if(this.getEstOccupe())
+		{
 		Vaisseau Xwings = new Vaisseau(); 
-		
+		}
 		
 	}
 	/**

@@ -4,10 +4,16 @@ import java.util.Random;
 
 public class Vaisseau extends Entite
 {
+	/**
+	 * @param Integr L'intégrité du vaisseau 
+	 * @param Res La valeur maximum que peut avoir Integr
+	 * @param Prop La propulsion que posséde le vaisseau
+	 * @param Equip L'equipement que posséde le vaisseau
+	 */
 	private int Integr ; 
 	private int Res;
 	private Propulsion Prop; 
-	private Equipement Machin ;
+	private Equipement Equip ;
 	
 	public Vaisseau()
 	{
@@ -15,7 +21,7 @@ public class Vaisseau extends Entite
 		this.Res = Math.abs(rand.nextInt())%10+1;
 		this.Integr = 0;
 		this.Prop = new Propulsion();
-		this.Machin = new Equipement();
+		this.Equip = new Equipement();
 		//TODO ajouter propusion et equipement 
 	}
 	public int getIntegr()

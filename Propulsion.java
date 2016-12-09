@@ -4,6 +4,11 @@ import java.util.Random;
 
 public class Propulsion 
 {
+	/**
+	 * @param Portee La distance maximum que le vaisseau peut parcourir en un seul tour 
+	 * @param Reservoir Le nombre de case que le vaisseau peut parcourir si le reservoir est vide le vaisseau ne peut plus se deplacer
+	 * @param LimiteReserv La valeur maximum que peut avoir le Reservoir 
+	*/
 	private int Portee; 
 	private int Reservoir;
 	private int LimiteReserv;
@@ -34,9 +39,7 @@ public class Propulsion
 			this.Reservoir = this.Reservoir + 5 ; 
 		}
 	}
-	/**
-	 * @param args
-	 */
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

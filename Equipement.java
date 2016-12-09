@@ -4,6 +4,9 @@ public class Equipement {
 	
 	public Equipement()
 	{
+	}
+	public void RencontreVaisseau()// TODO ajouter l'espece qui possede le vaisseau 
+	{
 		
 	}
 	/**

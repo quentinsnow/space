@@ -1,9 +1,18 @@
 
 import java.util.ArrayList;
 import java.util.Random;
-
+/**
+ * @Brief 
+ */
 public class Espece 
 {
+	/**
+	 * @param Id identifiant espece
+	 * @param Txnat taux de natalité
+	 * @param Txprod Taux de productivite
+	 * @param Tableau des planete et des vaisseau que possede l'espece
+	 * 
+	 */
 	private int Id;
 	private int Txnat;
 	private int Txprod;
