@@ -12,9 +12,9 @@ public class Planete extends Entite
 	private int Taille; 
 	private int Popu;
 	private boolean Constr;
-	public Planete ()
+	public Planete (int id)
 	{
-		super();
+		super(id);
 		Random rand = new Random();
 		this.Taille = Math.abs(rand.nextInt())%(Constantes.PlaneteTailleMax-Constantes.PlaneteTailleMin+1) + Constantes.PlaneteTailleMin;
 		this.Popu = 0;
@@ -37,11 +37,15 @@ public class Planete extends Entite
 	{
 		Popu = Popu*(1+alien.getTxnat()/100);
 	}
-	public void construction() //TODO a implementer
+	public void construction(int id) //TODO a implementer
 	{
-		if(this.getEstOccupe())
+		if(Constr)
 		{
-		Vaisseau Xwings = new Vaisseau(); 
+			
+		}
+		else if(this.getEstOccupe())
+		{
+		Vaisseau Xwings = new Vaisseau(id); 
 		}
 		
 	}

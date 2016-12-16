@@ -15,14 +15,20 @@ public class Vaisseau extends Entite
 	private Propulsion Prop; 
 	private Equipement Equip ;
 	
-	public Vaisseau()
+	public Vaisseau(int id)
 	{
+		super(id);
 		Random rand = new Random();
 		this.Res = Math.abs(rand.nextInt())%10+1;
 		this.Integr = 0;
 		this.Prop = new Propulsion();
 		this.Equip = new Equipement();
 		//TODO ajouter propusion et equipement 
+	}
+	public void construction(Planete p, Espece A )
+	{
+		int truc = (int)(p.getPopu()*A.getTxnat());
+		Integr = Math.min(Res,Integr + truc);
 	}
 	public int getIntegr()
 	{

@@ -18,12 +18,12 @@ public class Espece
 	private int Txprod;
 	private ArrayList<Entite> truc;
 	
-	public Espece ()
+	public Espece (int id )
 	{
 		Random rand = new Random();
-		this.Id = Math.abs(rand.nextInt())%3;
-		this.Txnat = Math.abs(rand.nextInt())%10+5;
-		this.Txprod = Math.abs(rand.nextInt())%5+1;
+		this.Id = id;
+		this.Txnat = (Math.abs(rand.nextInt())%10+5)/100;
+		this.Txprod = (Math.abs(rand.nextInt())%5+1)/100;
 		// TODO ajouter affectation a une planete 	
 	}
 

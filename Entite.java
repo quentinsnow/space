@@ -1,5 +1,3 @@
-
-import java.util.Random;
 public  class Entite 
 {
 	/**
@@ -14,11 +12,11 @@ public  class Entite
 	private int Posy; 
 	private boolean EstOccupe; 
 	//TODO ajouter qui possède l'Entite
-	public Entite ()
+	public Entite (int id)
 	{
-		Random rand = new Random();
 		
-		this.IdE = 2;//TODO trouver une methode pour avoir des id différents pour toute les entites
+		
+		this.IdE = id;
 		this.Posx = 1;
 		this.Posy = 1; 
 		this.EstOccupe = false;
